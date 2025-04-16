@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide Show Ảnh</title>
+  <script src="slideshow.js" defer></script>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      padding: 50px;
+    }
+    .slideshow-container {
+      position: relative;
+      display: inline-block;
+    }
+    .slideshow-container img {
+      width: 400px;
+      height: auto;
+      border: 2px solid #a2a0a0;
+      display: block;
+    }
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(104, 99, 99, 0.7);
+      border: none;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .left-button {
+      left: 0;
+    }
+    .right-button {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Slide Phong Cảnh</h2>
+  <div class="slideshow-container">
+    <button class="nav-button left-button" onclick="nextImage()"><</button>
+    <img id="slide" src="" alt="Ảnh slideshow">
+    <button class="nav-button right-button" onclick="prevImage()">></button>
+  </div>
+
+</body>
+</html>
